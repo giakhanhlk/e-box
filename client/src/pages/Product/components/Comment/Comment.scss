@@ -1,0 +1,108 @@
+.comment {
+  &-title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &-content {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      height: 3px;
+      background: #ccc;
+    }
+  }
+
+  &-rating {
+    display: flex;
+    border: 1px solid #f9ede5;
+    padding: 20px;
+    margin: 25px 0;
+    background: #fffbf8;
+
+    &__star {
+      flex: 0.5;
+      align-self: center;
+      text-align: center;
+    }
+
+    &__choice {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .rating-filter {
+    flex-wrap: wrap;
+    align-self: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .count-number, .count-average svg {
+    color: var(--primary);
+  }
+
+  .product-comment {
+    &__user {
+      display: flex;
+      align-items: center;
+    }
+
+    &__avatar {
+      flex: 0.08;
+    }
+
+    &__rating {
+      color: var(--primary);
+    }
+
+    &__other {
+      display: flex;
+      line-height: 2;
+    }
+
+    &__space {
+      flex: 0.08;
+    }
+
+    &__content {
+      flex: 1;
+    }
+
+    &__date {
+      font-size: 12px;
+    }
+
+    &__images {
+      .product-image {
+        margin-right: 10px;
+      }
+    }
+
+    &__like {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      background: #ccc;
+
+      svg {
+        margin-right: 10px;
+        color: #6d6d6d;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--primary)
+        }
+      }
+    }
+  }
+}

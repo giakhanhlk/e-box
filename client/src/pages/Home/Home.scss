@@ -1,0 +1,152 @@
+
+
+.top-deal {
+  .list-inline {
+    justify-content: space-between;
+  }
+
+  .super-deal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: #1f2336;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+
+  .product-item-1 {
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+
+    .provider {
+      font-size: 12px;
+      font-weight: 500;
+      color: #787878;
+    }
+
+    .product-name {
+      font-weight: 600;
+      line-height: 2;
+      color: #1063a7;
+    }
+
+    .product-price {
+      color: #ff0000;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .product-picture-large {
+      text-align: center;
+
+      img {
+        height: 300px;
+      }
+    }
+
+    .other-pictures {
+      margin-top: 45px;
+      line-height: 4;
+
+      img {
+        width: 51px;
+        height: 51px;
+        border: 1px solid #e5e5e5;
+      }
+
+      li {
+        cursor: pointer;
+
+        &:hover img {
+          border-bottom: 3px solid #1063a7;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .product-hover {
+    display: flex;
+    justify-content: space-evenly;
+    display: none;
+  }
+}
+
+.owner {
+  font-size: 12px;
+  color: #9f9f9f;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 3px 0;
+}
+
+.name {
+  color: #5488e3;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.price {
+  color: red;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.old-price {
+  font-size: 14px;
+  color: #9f9f9f;
+  text-decoration: line-through;
+  line-height: 30px;
+}
+
+.service-icons {
+  justify-content: flex-end;
+
+  li {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .count-circle-abs {
+    position: absolute;
+    bottom: -3px;
+    right: -9px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #5488e3;
+  }
+}
+
+.banner-notice {
+  .banner img {
+    border-radius: 20px;
+  }
+}

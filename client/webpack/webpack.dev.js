@@ -1,10 +1,10 @@
 const webpack = require("webpack");
-const path = require("path");
 const paths = require("./paths");
 
 module.exports = {
   mode: "development",
   output: {
+    publicPath: "/",
     filename: "[name].js",
     path: paths.outputPath,
     chunkFilename: "[name].js",
@@ -13,21 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.(css|scss)$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true,
-              modules: {
-                mode: "local",
-                localIdentName: "[local]__[hash:base64:5]",
-                exportLocalsConvention: "camelCase",
-              },
-            },
-          },
-          "sass-loader",
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
@@ -38,6 +24,7 @@ module.exports = {
     open: true,
     compress: true,
     inline: true,
+    publicPath: "/",
     historyApiFallback: true,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],

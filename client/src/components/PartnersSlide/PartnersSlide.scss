@@ -1,0 +1,27 @@
+.partner-brand {
+  height: 66px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  &__img {
+    width: 178px;
+    text-align: center;
+    // animation: leftToRight 3s linear infinite;
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(204px);
+  }
+}
